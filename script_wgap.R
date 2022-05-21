@@ -9,9 +9,6 @@
 #Prevent scientific notations
 options(scipen=999)
 
-#set working directory
-setwd("~/Library/Mobile Documents/com~apple~CloudDocs/02 I Studium/4. Semester/AdvQuant/Adv.Q. Final Paper")
-
 #Load packages
 library(WDI)
 library(tidyverse)
@@ -413,9 +410,3 @@ modelsummary(mod_cb,
                      "Union Density" = 2)) %>% 
   save_kable(file = "figures_tables/table_model.html",
              bs_theme = "readable")
-
-
-
-
-
-
